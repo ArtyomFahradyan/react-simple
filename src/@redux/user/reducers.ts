@@ -1,7 +1,6 @@
 import { Payload } from "types";
 import { cloneDeep } from "lodash";
 import types, { UsersStore } from "./types";
-import { steps } from "constants/steps";
 
 export const initialValues: UsersStore = {
   user: {
@@ -15,7 +14,7 @@ export const initialValues: UsersStore = {
     password: "",
     looking_type: "",
   },
-  currentStep: steps[0],
+  currentStep: {} as never,
 };
 
 export default function (
